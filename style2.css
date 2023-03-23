@@ -99,7 +99,7 @@ div {
 }
 
 .box2 {
-    background-color: rgb(133, 118, 185);
+    
     grid-row-start: 1;
     grid-column-start: 3;
     grid-row-end: 1;
@@ -112,7 +112,7 @@ div {
 }
 
 .box3 {
-    background-color: rgb(176, 160, 38);
+    
     grid-row-start: 1;
     grid-column-start: 4;
     grid-row-end: 1;
@@ -121,7 +121,7 @@ div {
 }
 
 .box4 {
-    background-color: rgb(113, 155, 71);
+    
     grid-row-start: 1;
     grid-column-start: 6;
     grid-row-end: 1;
@@ -130,7 +130,7 @@ div {
 }
 
 .box5 {
-    background-color: rgb(79, 73, 64);
+    
     grid-row-start: 1;
     grid-column-start: 10;
     grid-row-end: 1;
@@ -140,7 +140,7 @@ div {
 }
 
 .box6 {
-    background-color: rgb(28, 130, 81);
+    
     grid-row-start: 1;
     grid-column-start: 11;
     grid-row-end: 1;
@@ -150,7 +150,7 @@ div {
 }
 
 .box7 {
-    background-color: rgb(121, 77, 125);
+    
     grid-row-start: 1;
     grid-column-start: 12;
     grid-row-end: 1;
@@ -160,7 +160,7 @@ div {
 }
 
 .box8 {
-    background-color: rgb(207, 153, 15);
+    
     grid-row-start: 1;
     grid-column-start: 13;
     grid-row-end: 1;
@@ -175,7 +175,7 @@ div {
     grid-column-start: 14;
     grid-row-end: 1;
     grid-column-end: 16;
-    padding-top: 30px;
+    padding-top: 25px;
     text-align: left;
     font-size: 25px;
 }
