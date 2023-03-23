@@ -1,8 +1,4 @@
-body {
-    background-image: url(BG3.png);
-    
-    
-}
+
 
 .wrapper {
     display: grid;
@@ -22,18 +18,32 @@ body {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: (6, 90px);
+    grid-template-rows: (6, 80px);
     gap: 10px 20px;
     /* justify-items: end; */
     /* align-items: end; */
     width: 100%;
-    height: 600px;
+    height: 500px;
+    
+    text-align: center;
+}
+
+.wrapper_main_footer {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: (1, 180px);
+    gap: 10px 20px;
+    /* justify-items: end; */
+    /* align-items: end; */
+    width: 100%;
+    height: 200px;
     
     text-align: center;
 }
 
 div {
-    
+    border: 3px solid black;
 }
 
 .box1_1 .name_s {
@@ -64,7 +74,14 @@ div {
     grid-row-end: 3;
     grid-column-end: 3;
     text-align: left;
-    
+}
+
+.box1_3 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 4;
+    text-align: left;
 }
 
 .pbtn {
