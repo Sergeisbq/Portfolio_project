@@ -1,6 +1,9 @@
-
+/* div {
+    border: 2px solid black;
+} */
 
 .wrapper {
+    
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(15, 1fr);
@@ -18,12 +21,12 @@
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: (6, 80px);
+    grid-template-rows: (6, 85px);
     gap: 10px 20px;
     /* justify-items: end; */
     /* align-items: end; */
     width: 100%;
-    height: 500px;
+    height: 550px;
     
     text-align: center;
 }
@@ -42,9 +45,34 @@
     text-align: center;
 }
 
-div {
-    border: 3px solid black;
+.wrapper_about {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: (3, 150px);
+    gap: 10px 20px;
+    /* justify-items: end; */
+    /* align-items: end; */
+    width: 100%;
+    height: 450px;
+    
+    text-align: center;
 }
+
+.wrapper_about {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: (3, 150px);
+    gap: 10px 20px;
+    /* justify-items: end; */
+    /* align-items: end; */
+    width: 100%;
+    height: 450px;
+    
+    text-align: center;
+}
+
 
 .box1_1 .name_s {
     
@@ -74,6 +102,7 @@ div {
     grid-row-end: 3;
     grid-column-end: 3;
     text-align: left;
+    display: flex;
 }
 
 .box1_3 {
@@ -82,6 +111,52 @@ div {
     grid-row-end: 1;
     grid-column-end: 4;
     text-align: left;
+}
+
+.box1_4 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    text-align: left;
+}
+
+.block1_2, .block2_2 {
+    width: 50%;
+}
+
+.block2_2 {
+    text-align: center;
+    
+}
+
+.block2_2_1 {
+    display: none;
+}
+
+.block2_2:hover .block2_2_1 {
+    display: inline-block
+}
+
+.box2_4 {
+    
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.avatar {
+    padding-right: 30px;
+    border-right: 3px solid rgb(33, 115, 46);
+}
+
+.fa-regular {
+    font-size: 31px;
+    color: rgb(33, 115, 46);
+    margin: 0px;
+    padding: 0px;
 }
 
 .pbtn {
@@ -101,10 +176,15 @@ div {
     
 }
 
-.e-mail, .guitar, .music {
+.e-mail, .guitar, .music, .resume_l   {
     text-decoration: none;
     color: black;
     padding: 3px;
+}
+
+#example {
+    text-decoration: none; 
+    border: none;
 }
 
 .links {
@@ -117,8 +197,22 @@ div {
     padding-top: 10px;
     padding-right: 25px;
     font-size: 20px;
+    border: none;
 }
 
+.text_about1 {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -11px;
+    margin-bottom: 19px;
+    
+}
+
+.text_about2 {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -10px;
+}
 
 .box1 {
     
@@ -148,14 +242,15 @@ div {
     grid-row-start: 1;
     grid-column-start: 4;
     grid-row-end: 1;
-    grid-column-end: 6;
+    grid-column-end: 8;
     padding-top: 35px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .box4 {
     
     grid-row-start: 1;
-    grid-column-start: 6;
+    grid-column-start: 8;
     grid-row-end: 1;
     grid-column-end: 10;
     padding-top: 35px;
@@ -169,6 +264,12 @@ div {
     grid-column-end: 11;
     padding-top: 35px;
     font-family: 'Raleway', sans-serif;
+    
+}
+
+.navabout {
+    text-decoration: none; 
+    color: black;
 }
 
 .box6 {

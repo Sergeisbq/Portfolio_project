@@ -27,12 +27,26 @@ body {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: (6, 90px);
+    grid-template-rows: (6, 80px);
     gap: 10px 20px;
     /* justify-items: end; */
     /* align-items: end; */
     width: 100%;
-    height: 600px;
+    height: 500px;
+    
+    text-align: center;
+}
+
+.wrapper_main_footer {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: (1, 180px);
+    gap: 10px 20px;
+    /* justify-items: end; */
+    /* align-items: end; */
+    width: 100%;
+    height: 200px;
     
     text-align: center;
 }
@@ -68,6 +82,15 @@ body {
     
 }
 
+.box1_3 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 4;
+    text-align: left;
+    
+}
+
 .pbtn {
     font-size: 25px;
 }
@@ -85,7 +108,7 @@ body {
     
 }
 
-.e-mail, .guitar, .music {
+.e-mail, .guitar, .music, .resume_l {
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 3px;
@@ -104,6 +127,15 @@ body {
     font-size: 20px;
 }
 
+.bg_text {
+    font-size: 195px;
+    font-family: "Times New Roman", Times, serif;
+    
+    padding: 0px;
+    margin-top: -70px;
+    margin-left: -65px;
+}
+
 
 .box1 {
     
@@ -113,6 +145,12 @@ body {
     grid-column-end: 3;
     padding-top: 35px;
     /* grid-area: 1/ 1/ 4/ 1/; */
+}
+
+.text_invis {
+    color: rgba(255, 255, 255, 0.083);
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .box2 {
