@@ -21,8 +21,8 @@
             <div class="box4"></div>
             <div class="box5"><a class="navabout" href="#example">About</a></div>
             <div class="box6"><a class="navabout" href="#projects">Projects</a></div>
-            <div class="box7"><a class="resume_l" href="CV.html">Resume</a></div>
-            <div class="box8">Contacts</div>
+            <div class="box7"><a class="resume_l" href="https://drive.google.com/file/d/1NDhnSXqz8fTiDtJhl0Aymukk98yJOhIt/view?usp=sharing">Resume</a></div>
+            <div class="box8"><a class="navabout" href="#example">Skills</a></div>
             <div class="box9"><button class="btn1"><a href="index.html"><i class="fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i></a></button></div>
         </div>
     </header>
@@ -32,7 +32,7 @@
                 <p class="name_s">I'm Sergei Boiko</p>
                 <p class="text_1">Frontend, Backend developer and Javascript engineer, <button class="btn2"><a class="guitar" href="https://www.gibson.com/en-US/Electric-Guitar/CUSGJ5555/Ebony-2-Pickup">Electric Guitar</a></button> enthusiast, practicing minimalist, and</p>
                 <p class="text_1"><button class="btn2"><a class="music" href="https://open.spotify.com/playlist/3MH53FmBnWbCZoLsQUrEFB?si=efb6fd5307b14738">Rock Music & Jazz</a></button> in search of flow</p><br>
-                <p class="text_1">working with my hands to make magic happen on the internet. View my <button class="btn2"><a class="navabout" href="#projects">Projects</a></button>, <button class="btn2">Articles</button>, <button class="btn2"><a class="resume_l" href="CV.html">Resume</a></button>, <button class="btn2">Contacts</button><p>
+                <p class="text_1">working with my hands to make magic happen on the internet. View my <button class="btn2"><a class="navabout" href="#projects">Projects</a></button>, <button class="btn2">Articles</button>, <button class="btn2"><a class="resume_l" href="https://drive.google.com/file/d/1NDhnSXqz8fTiDtJhl0Aymukk98yJOhIt/view?usp=sharing">Resume</a></button>, <button class="btn2">Contacts</button><p>
                 <p class="text_1"> or send an email at <button class="btn2"><a class="e-mail" href="mailto:ss_b@icloud.com">ss_b@icloud.com</a></button></p><br>
                 <p class="text_1">See More About Me <a class="navabout" href="#example">&#10547</a></p>
                 <div class="box1_2">
@@ -61,12 +61,25 @@
         </div>
         <div class="wrapper_about">
             <div class="box1_4">
-                <img class="avatar" src="CVI_2.png" width="250px">
+                <img class="avatar" src="CVI_2.png" width="350px">
             </div>
             <div class="box2_4">
                 <br><br>
                 <h2 class="text_about1">About me</h2>
-                <p  class="text_about2">Project Manager with an engineering background. During my 11 years of working experience, I have been managing complex IT projects in the transport, road construction sector, and the oil industry. The field of my duties includes all project-development stages: from initiation to implementation.</p>
+                <p  class="text_about2">
+                    Dynamic and motivated Full Stack Developer with a strong background in managing information and monitoring systems in the High Tech industry. Experienced in Python, PostgreSQL, and ArcGIS, enabling the development of impactful software solutions. Collaborative team player with 6 years of experience delivering successful projects. Actively seeking new opportunities to contribute expertise to exciting projects.
+                    </p>
+                <div class="skills-container">
+                    <h2 class="text_about1">Skills:</h2>
+                    <div class="typewriter">
+                        <div id="skill-image"></div>
+                        <span>
+                        <span id="skill-text"></span>
+                        
+                        <span id="cursor"></span>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="projects" class="wrapper_projects">
@@ -81,14 +94,20 @@
                           <div class="carousel-item active">
                             <p class="first_header_c">Tribute page for Ardbeg distillery</p>
                             <img src="1_1.png" class="d-block w-100" alt="...">
+                            <br>
+                            <a class="linksGit" href="/"><i class="fa-brands fa-github" style="color: #ffffff;"></i>Project Link</a>
                           </div>
                           <div class="carousel-item">
                             <p class="first_header_c">Landing page for Bootstrap</p>
                             <img src="1_2.png" class="d-block w-100" alt="...">
+                            <br>
+                            <a class="linksGit" href="/"><i class="fa-brands fa-github" style="color: #ffffff;"></i>Project Link</a>
                           </div>
                           <div class="carousel-item">
                             <p class="first_header_c">Product page for online Store</p>
                             <img src="1_3.png" class="d-block w-100" alt="...">
+                            <br>
+                            <a class="linksGit" href="/"><i class="fa-brands fa-github" style="color: #ffffff;"></i>Project Link</a>
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
@@ -107,5 +126,60 @@
             </div>
         </div>
     </main>
+
+<script>
+
+const skills = [
+    { name: 'JavaScript', image: 'js.png' },
+    { name: 'Python', image: 'python.png' },
+    { name: 'React', image: 'atomW.png' },
+    { name: 'SQL', image: 'elephant.png' },
+    { name: 'Node.js', image: 'node.png' },
+    { name: 'Django', image: 'python.png' },
+    { name: 'Git', image: 'git.png' },
+    { name: 'CSS', image: 'css.png' },
+    { name: 'HTML', image: 'html.png' },
+];
+
+let skillIndex = 0;
+
+function typeSkill() {
+    const skillText = document.getElementById('skill-text');
+    const skillImage = document.getElementById('skill-image');
+    const currentSkill = skills[skillIndex].name;
+    const currentImage = skills[skillIndex].image;
+    const typingDelay = 100;
+    const deletionDelay = 100;
+    const pauseDelay = 1500;
+
+    for (let i = 0; i <= currentSkill.length; i++) {
+    setTimeout(() => {
+        skillText.textContent = currentSkill.slice(0, i);
+
+        if (i === currentSkill.length) {
+        skillImage.innerHTML = `<img class="skills_image" src="${currentImage}" alt="${currentSkill}">`;
+
+        setTimeout(() => {
+            for (let j = currentSkill.length; j >= 0; j--) {
+            setTimeout(() => {
+                skillText.textContent = currentSkill.slice(0, j);
+
+                if (j === 0) {
+                skillImage.innerHTML = '';
+                skillIndex = (skillIndex + 1) % skills.length;
+                setTimeout(typeSkill, typingDelay);
+                }
+            }, (currentSkill.length - j) * deletionDelay);
+            }
+        }, pauseDelay);
+        }
+    }, i * typingDelay);
+    }
+}
+
+typeSkill();
+    
+</script>
+
 </body>
 </html>
