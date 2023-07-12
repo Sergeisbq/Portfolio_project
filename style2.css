@@ -130,7 +130,7 @@
 .box1_1 .name_s {
     
     font-size: 60px;
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Abril Fatface', cursive;
     text-align: left;
 }
 
@@ -435,7 +435,7 @@
     vertical-align: bottom;
     width: 2px;
     height: 44px;
-    background-color: #212121;
+    background-color: #ffffff;
     animation: blink-caret 0.7s step-end infinite;
   }
   
@@ -455,6 +455,12 @@
 
   .skills_image {
     width: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .deployed_image {
+    width: 20px;
     margin-bottom: 10px;
     margin-right: 10px;
   }
